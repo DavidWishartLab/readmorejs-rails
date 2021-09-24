@@ -79,7 +79,7 @@
           maxHeight: 'none',
           overflow: 'hidden'
         }).insertAfter(element),
-        expandedHeight = el.outerHeight(),
+        expandedHeight = el.innerHeight(),
         cssMaxHeight = parseInt(el.css({maxHeight: ''}).css('max-height').replace(/[^-\d\.]/g, ''), 10),
         defaultHeight = element.data('defaultHeight');
 
